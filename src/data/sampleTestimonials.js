@@ -1,0 +1,73 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Link Business Alliance — Sample Testimonial Data
+// All testimonials are sample/demo preview data only. isSample: true.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const sampleTestimonials = [
+  {
+    id: 'tm-001',
+    name: 'Robert Caldwell',
+    business: 'Caldwell Construction Group',
+    chapter: 'The Link Houston',
+    membershipLevel: 'Category Member',
+    outcomeType: 'Partnerships',
+    quote: 'I joined The Link because I wanted real relationships, not just a list of names. Within six months I had three ongoing partnerships with other members — no cold calls, no awkward pitches. Just built through consistent meetings and follow-through.',
+    result: 'Three key vendor partnerships formed',
+    isSample: true,
+  },
+  {
+    id: 'tm-002',
+    name: 'Sandra Morales',
+    business: 'Morales & Co. CPA',
+    chapter: 'The Link The Woodlands',
+    membershipLevel: 'Exclusive Category Partner',
+    outcomeType: 'Referral Participation',
+    quote: 'Referrals in The Link work because people actually know you. Clients they send me already trust the person who referred them. That\'s worth more than any advertising I\'ve ever done.',
+    result: 'Consistent referrals from chapter network',
+    isSample: true,
+  },
+  {
+    id: 'tm-003',
+    name: 'David Okonkwo',
+    business: 'Vantage Consulting',
+    chapter: 'The Link Gulf Coast',
+    membershipLevel: 'Visibility Member',
+    outcomeType: 'Mentorship',
+    quote: 'My mentor through The Link helped me see I was positioning my services wrong. Three conversations changed how I packaged my offer. It wasn\'t magic — it was clarity from someone who\'d already figured it out.',
+    result: 'Operational pivot guided by experienced mentor',
+    isSample: true,
+  },
+  {
+    id: 'tm-004',
+    name: 'Angela Kim',
+    business: 'Bespoke Events Co.',
+    chapter: 'The Link Montgomery County',
+    membershipLevel: 'Category Member',
+    outcomeType: 'Education',
+    quote: 'The education session on hiring was the most practical thing I\'d ever heard on the topic. No theory — just real talk about what to look for, what to avoid, and how to onboard someone without losing your mind.',
+    result: 'Hired first employee after education session',
+    isSample: true,
+  },
+  {
+    id: 'tm-005',
+    name: 'Patricia Nguyen',
+    business: 'Bloom Health Studio',
+    chapter: 'The Link Houston',
+    membershipLevel: 'Visibility Member',
+    outcomeType: 'Resource Access',
+    quote: 'The member directory helped me find a CPA and a business attorney I actually trust. Both were referred by members I already knew. That saved me a lot of time and a lot of stress.',
+    result: 'Found trusted accountant and attorney through members',
+    isSample: true,
+  },
+  {
+    id: 'tm-006',
+    name: 'James Harper',
+    business: 'Harper Logistics Group',
+    chapter: 'The Link Magnolia',
+    membershipLevel: 'Category Member',
+    outcomeType: 'Accountability',
+    quote: 'My accountability group held me to the outreach numbers I\'d set for myself. It sounds simple. It worked. Four of those outreach targets became clients. I don\'t think I would have stayed consistent without the group.',
+    result: 'Accountability group supported consistent outreach',
+    isSample: true,
+  },
+];

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm off-white base */
+    --background: 40 20% 97%;
+    --foreground: 216 12% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 12% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 12% 10%;
+
+    /* Deep teal #00606B */
+    --primary: 184 100% 21%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 15% 91%;
+    --secondary-foreground: 216 12% 10%;
+
+    --muted: 40 12% 93%;
+    --muted-foreground: 216 8% 45%;
+
+    /* Metallic gold #B8862B */
+    --accent: 37 62% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 36 15% 86%;
+    --input: 36 15% 86%;
+    --ring: 184 100% 21%;
+
+    --radius: 0.25rem;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', sans-serif;
+    --font-display: 'Inter', sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    /* Brand */
+    --charcoal: 216 12% 10%;
+    --teal: 184 100% 21%;
+    --gold: 37 62% 45%;
+    --offwhite: 40 25% 96%;
+  }
+
+  .dark {
+    --background: 216 12% 8%;
+    --foreground: 40 20% 94%;
+    --card: 216 12% 11%;
+    --card-foreground: 40 20% 94%;
+    --popover: 216 12% 11%;
+    --popover-foreground: 40 20% 94%;
+    --primary: 184 80% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 10% 16%;
+    --secondary-foreground: 40 20% 94%;
+    --muted: 216 10% 16%;
+    --muted-foreground: 40 10% 55%;
+    --accent: 37 62% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 216 10% 18%;
+    --input: 216 10% 18%;
+    --ring: 184 80% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3 {
+    @apply font-heading;
+  }
+}
+
+/* Gold accent line utility */
+.gold-line {
+  width: 40px;
+  height: 2px;
+  background: #B8862B;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #00606B44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00606B88;
+}

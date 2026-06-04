@@ -1,0 +1,172 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Link Business Alliance — Sample Event Data
+// All events are sample/demo preview data only.
+// isSample: true marks all records as demo data.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const EVENT_TYPES = [
+  'All',
+  'Owner Roundtable',
+  'Chapter Meeting',
+  'Lunch-and-Learn',
+  'Resource Session',
+  'Member Introduction Event',
+  'Sponsor Event',
+  'Start a Chapter Info Session',
+  'Education Session',
+];
+
+export const LOCATION_TYPES = ['In-Person', 'Virtual', 'Hybrid'];
+
+export const AUDIENCE_OPTIONS = [
+  'Members Only',
+  'Members + Guests',
+  'Open to Guests',
+  'Sponsors / Partners',
+  'Chapter Leaders',
+  'Prospective Members',
+];
+
+export const EVENT_MEMBER_STATUS_OPTIONS = [
+  'Current member',
+  'Interested in joining',
+  'Guest',
+  'Sponsor / partner',
+  'Chapter leader inquiry',
+];
+
+export const RSVP_EVENT_TYPES = [
+  'Owner Roundtable',
+  'Chapter Meeting',
+  'Lunch-and-Learn',
+  'Resource Session',
+  'Member Introduction Event',
+  'Sponsor Event',
+  'Start a Chapter Info Session',
+  'Not sure yet',
+];
+
+export const RSVP_CHAPTERS = [
+  'The Link Houston',
+  'The Link Gulf Coast',
+  'The Link Montgomery County',
+  'The Link The Woodlands',
+  'The Link Magnolia',
+  'The Link Texas (Virtual)',
+  'Not sure / looking for local chapter',
+];
+
+export const sampleEvents = [
+  {
+    id: 'ev-001',
+    title: 'The Link Houston — Monthly Chapter Meeting',
+    type: 'Chapter Meeting',
+    chapter: 'The Link Houston',
+    market: 'Houston, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'In-Person',
+    locationDetail: 'Houston, TX area',
+    audience: 'Members + Guests',
+    shortDescription: 'Regular chapter meeting for Link Houston members. Includes member introductions, updates, an education segment, open discussion, and networking.',
+    isSample: true,
+  },
+  {
+    id: 'ev-002',
+    title: 'Owner Roundtable: Hiring Your First Employee',
+    type: 'Owner Roundtable',
+    chapter: 'The Link Texas (Virtual)',
+    market: 'Virtual',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'Virtual',
+    locationDetail: 'Online',
+    audience: 'Members + Guests',
+    shortDescription: 'Small-group roundtable on the practical decisions around hiring — timing, compensation, onboarding, and common mistakes. Moderated discussion with owner input.',
+    isSample: true,
+  },
+  {
+    id: 'ev-003',
+    title: 'Lunch-and-Learn: Understanding Your Numbers',
+    type: 'Lunch-and-Learn',
+    chapter: 'The Link Magnolia',
+    market: 'Magnolia, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'Lunch Hour — TBA',
+    locationType: 'In-Person',
+    locationDetail: 'Magnolia, TX area',
+    audience: 'Open to Guests',
+    shortDescription: 'Practical session on profit margins, cash flow basics, and knowing when your business is actually making money versus just being busy.',
+    isSample: true,
+  },
+  {
+    id: 'ev-004',
+    title: 'The Link Gulf Coast — Chapter Meeting',
+    type: 'Chapter Meeting',
+    chapter: 'The Link Gulf Coast',
+    market: 'Houston, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'In-Person',
+    locationDetail: 'Houston, TX (Gulf Coast area)',
+    audience: 'Members + Guests',
+    shortDescription: 'Regular chapter meeting for Gulf Coast members. Open to guests who are interested in learning more about The Link and local business networking.',
+    isSample: true,
+  },
+  {
+    id: 'ev-005',
+    title: 'Sponsor Mixer — The Link Montgomery County',
+    type: 'Sponsor Event',
+    chapter: 'The Link Montgomery County',
+    market: 'Conroe, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'Evening — TBA',
+    locationType: 'In-Person',
+    locationDetail: 'Conroe, TX area',
+    audience: 'Sponsors / Partners',
+    shortDescription: 'Networking event featuring strategic partners and sponsors. An opportunity to explore vendor relationships, sponsorship options, and local partnerships with other members.',
+    isSample: true,
+  },
+  {
+    id: 'ev-006',
+    title: 'Resource Session: Building a Referral-Ready Profile',
+    type: 'Resource Session',
+    chapter: 'The Link The Woodlands',
+    market: 'The Woodlands, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'In-Person',
+    locationDetail: 'The Woodlands, TX area',
+    audience: 'Members + Guests',
+    shortDescription: 'Practical session on how to structure your member profile, business description, service area, and ideal introduction so other members can confidently refer you.',
+    isSample: true,
+  },
+  {
+    id: 'ev-007',
+    title: 'Start a Chapter Info Session',
+    type: 'Start a Chapter Info Session',
+    chapter: 'The Link Texas (Virtual)',
+    market: 'Virtual',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'Virtual',
+    locationDetail: 'Online',
+    audience: 'Prospective Members',
+    shortDescription: 'Informational session for local leaders and business owners interested in starting a Link chapter in their market. Covers structure, requirements, and what the process involves.',
+    isSample: true,
+  },
+  {
+    id: 'ev-008',
+    title: 'Member Introduction Event — The Woodlands',
+    type: 'Member Introduction Event',
+    chapter: 'The Link The Woodlands',
+    market: 'The Woodlands, TX',
+    dateLabel: 'Coming Soon',
+    timeLabel: 'To Be Announced',
+    locationType: 'In-Person',
+    locationDetail: 'The Woodlands, TX area',
+    audience: 'Members + Guests',
+    shortDescription: 'Structured introduction event where members meet in small groups to learn about each other\'s businesses. Designed for owners who want to build real relationships, not just exchange cards.',
+    isSample: true,
+  },
+];
