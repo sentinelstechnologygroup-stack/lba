@@ -24,14 +24,13 @@ export default function EventRSVP() {
     guestCount: '1 (just me)',
     message: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const set = (field, value) => setForm(prev => ({ ...prev, [field]: value }));
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success('RSVP submitted. We will be in touch with event details.');
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   return (

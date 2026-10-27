@@ -7,12 +7,11 @@ import { toast } from 'sonner';
 
 export default function EventRSVPForm({ eventName = '', onClose }) {
   const [form, setForm] = useState({ name: '', business: '', email: '', phone: '', member: '', note: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success('RSVP submitted. You\'ll receive a confirmation from the chapter organizer.');
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   if (submitted) {

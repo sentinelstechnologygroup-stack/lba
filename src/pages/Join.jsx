@@ -21,12 +21,11 @@ const tiers = [
 
 export default function Join() {
   const [form, setForm] = useState({ name: '', business: '', email: '', phone: '', city: '', level: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success('Membership inquiry submitted. We\'ll be in touch within a few business days.');
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   return (

@@ -32,8 +32,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success("Message received. We'll respond within 2 business days.");
-    setForm({ name: '', business: '', email: '', phone: '', city: '', topic: '', message: '' });
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   return (
