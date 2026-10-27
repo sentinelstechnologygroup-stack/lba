@@ -13,12 +13,11 @@ const sponsorTypes = [
 
 export default function SponsorInquiryForm() {
   const [form, setForm] = useState({ name: '', business: '', email: '', phone: '', type: '', chapter: '', goals: '', budget: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success('Sponsor inquiry received. We\'ll be in touch within a few business days.');
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   if (submitted) {

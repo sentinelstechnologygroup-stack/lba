@@ -29,8 +29,7 @@ export default function StartChapter() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success('Inquiry submitted. We\'ll be in touch within a few business days.');
-    setForm({ name: '', email: '', phone: '', city: '', business: '', why: '' });
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   return (

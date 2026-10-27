@@ -86,12 +86,11 @@ export default function SimpleInquiry() {
   const location = useLocation();
   const cfg = configs[location.pathname] || configs['/ask-about-membership'];
   const [form, setForm] = useState({ name: '', business: '', email: '', phone: '', city: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success('Inquiry submitted. We\'ll be in touch within a few business days.');
+    toast.error("Online submissions are not connected yet. Your information has not been sent. Please use the contact details on this website.");
   };
 
   return (
